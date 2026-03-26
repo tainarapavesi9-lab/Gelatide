@@ -65,7 +65,7 @@
             background-color: #fcfaff;
             background-image: 
                 radial-gradient(at 0% 0%, rgba(74, 37, 176, 0.1) 0, transparent 50%), 
-                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.05) 0, transparent 40%),
+                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.05) 0, transparent 30%),
                 radial-gradient(at 50% 100%, rgba(124, 58, 237, 0.08) 0, transparent 50%);
         }
 
@@ -308,7 +308,6 @@
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Linda M.</span>
                     </div>
                 </div>
-                <!-- Duplicate for loop -->
                 <div class="flex">
                     <div class="review-ticker-card">
                         <div class="flex text-amber-400 mb-3">★★★★★</div>
@@ -543,10 +542,59 @@
         }
 
         const modalData = {
-            privacy: { title: "Privacy Policy", content: "<h4>Privacy</h4><p>We value your privacy. Your information is used only for processing orders and providing support.</p>" },
-            terms: { title: "Terms of Service", content: "<h4>Terms</h4><p>By using this site, you agree to our standard terms of service.</p>" },
-            returns: { title: "Return Policy", content: "<h4>60-Day Money Back Guarantee</h4><p>If you are unsatisfied, return all bottles within 60 days for a full refund.</p>" },
-            contact: { title: "Contact Us", content: "<h4>Support</h4><p>Email: contact@customercs.com<br>Phone: +1 (507) 448-8190</p>" }
+            privacy: { 
+                title: "Privacy Policy", 
+                content: `
+                    <h4>Your privacy is critically important to us.</h4>
+                    <p>It is our policy to respect your privacy regarding any information we may collect while operating our website. We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website.</p>
+                    <h5>Website Visitors</h5>
+                    <p>Like most website operators, we collect non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request.</p>
+                    <h5>Security</h5>
+                    <p>The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p>
+                    <h5>Remarketing</h5>
+                    <p>We may use remarketing services to advertise on third-party websites (including Google, Facebook and Others) to previous visitors to our site. This could be in the form of an advertisement on search results pages, or a site in the Display Network.</p>
+                    <h5>Cookies</h5>
+                    <p>To enrich and perfect your online experience, we use “Cookies”, similar technologies and services provided by others to display personalized content, appropriate advertising and store your preferences on your computer.</p>
+                `
+            },
+            terms: { 
+                title: "Terms of Service", 
+                content: `
+                    <h4>General</h4>
+                    <p>This website is owned and operated by (“COMPANY” “we” or “us”). By using the Site, you agree to be bound by these Terms of Service. Accessing the Site, in any manner, constitutes use of the Site and your agreement to be bound by these Terms of Service.</p>
+                    <h5>Intellectual Property Rights</h5>
+                    <p>This Site and all the materials available on the Site are the property of us and/or our affiliates or licensors. You may not use the Site or the materials available on the Site in a manner that infringes our rights.</p>
+                    <h5>Disclaimers</h5>
+                    <p>All information, products and services offered on or through the Site are provided “as is” without warranties of any kind, express or implied.</p>
+                    <h5>Refund Policy</h5>
+                    <p>To request a full refund, email contact@customercs.com within 60 days of purchase and return the bottles (even empty). Refunds are processed in 3–5 business days.</p>
+                `
+            },
+            returns: { 
+                title: "Return Policy", 
+                content: `
+                    <h4>60-Day Money Back Guarantee</h4>
+                    <p>If you are unsatisfied with your product for any reason you will have 60 days from the date of delivery to return the product and request a refund.</p>
+                    <h5>Return Process:</h5>
+                    <ol>
+                        <li><strong>Check Period:</strong> Ensure you are within the 60-day window from delivery.</li>
+                        <li><strong>Contact Us:</strong> Email contact@customercs.com with "Refund Request" in the subject line.</li>
+                        <li><strong>Ship Back:</strong> Send all bottles (empty or full) to our designated return address. Include your name and order ID.</li>
+                    </ol>
+                    <p>Please note that we do not support return shipping costs.</p>
+                `
+            },
+            contact: { 
+                title: "Contact Us", 
+                content: `
+                    <h4>How To Contact Us</h4>
+                    <p>Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you.</p>
+                    <h5>Email Support:</h5>
+                    <p>contact@customercs.com</p>
+                    <h5>Phone Support:</h5>
+                    <p>+1 (507) 448-8190</p>
+                `
+            }
         };
 
         function openModal(type) {
