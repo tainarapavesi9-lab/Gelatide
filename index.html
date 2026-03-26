@@ -76,7 +76,7 @@
         }
 
         header { 
-            padding: 1rem 0; 
+            padding: 1.25rem 0; 
             position: sticky;
             top: 0;
             z-index: 100; 
@@ -123,6 +123,8 @@
             animation: ticker 45s linear infinite;
         }
 
+        .ticker-wrapper:hover { animation-play-state: paused; }
+
         @keyframes ticker {
             0% { transform: translateX(0); }
             100% { transform: translateX(-50%); }
@@ -154,6 +156,7 @@
             box-shadow: 0 20px 40px rgba(74, 37, 176, 0.3);
             text-decoration: none;
             border: none;
+            cursor: pointer;
         }
         .btn-buy:hover { 
             transform: translateY(-5px) scale(1.02);
@@ -214,6 +217,7 @@
 
     <header>
         <div class="container-site flex justify-between items-center">
+            <!-- Header: Just text as requested -->
             <span class="font-black text-2xl tracking-tighter text-white uppercase">GELATIDE</span>
             <div class="hidden md:flex gap-6 items-center">
                 <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="bg-white text-[#4A25B0] text-[10px] px-6 py-2.5 rounded-xl font-black uppercase tracking-widest transition-all hover:scale-105 shadow-xl">Shop Now</a>
@@ -241,7 +245,7 @@
                         </div>
 
                         <p class="hero-description text-lg text-slate-500 max-w-xl leading-relaxed mt-10 mb-12 lg:text-left font-medium">
-                            Gelatide is a science-focused natural formula designed to assist glucose utilization and provide clean, consistent energy throughout your day.
+                            Gelatide is a science-focused natural formula designed to assist glucose utilization and provide <span class="text-[#4A25B0] font-bold">clean, consistent energy</span> throughout your day.
                         </p>
 
                         <div class="cta-container mb-12">
@@ -279,55 +283,55 @@
             <div class="ticker-wrapper">
                 <div class="flex">
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“My energy levels are finally stable. No more crashing at 3 PM!”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Sarah J.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“I feel a sense of control over my daily routine that I haven't had in years.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Mark T.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“The quality of the formula is visible. Pure ingredients, pure results.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Elena R.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Finally found something that aligns with my health goals without aggression.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— David S.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Consistent use made a massive difference in my metabolic wellness.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Linda M.</span>
                     </div>
                 </div>
-                <!-- Duplicate for loop -->
+                <!-- Duplicate -->
                 <div class="flex">
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“My energy levels are finally stable. No more crashing at 3 PM!”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Sarah J.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“I feel a sense of control over my daily routine that I haven't had in years.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Mark T.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“The quality of the formula is visible. Pure ingredients, pure results.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Elena R.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Finally found something that aligns with my health goals without aggression.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— David S.</span>
                     </div>
                     <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
                         <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Consistent use made a massive difference in my metabolic wellness.”</p>
                         <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Linda M.</span>
                     </div>
@@ -335,7 +339,7 @@
             </div>
         </section>
 
-        <!-- BARRA DE PROVA SOCIAL (Sem emoticon) -->
+        <!-- SOCIAL PROOF BAR (Clean) -->
         <section class="py-16 bg-white border-y border-slate-100">
             <div class="container-site text-center">
                 <p class="text-slate-600 font-extrabold text-xl lg:text-2xl tracking-tight">
@@ -344,7 +348,7 @@
             </div>
         </section>
 
-        <!-- SECTION 3: PURITY FIRST -->
+        <!-- SECTION 3: PURITY FIRST (Label After Title) -->
         <section class="py-24 bg-slate-50">
             <div class="container-site text-center">
                 <div class="max-w-4xl mx-auto">
@@ -353,6 +357,7 @@
                         Clean Formula.<br>Controlled Process.
                     </h2>
                     
+                    <!-- Label image here -->
                     <div class="flex justify-center mb-12">
                         <div class="relative p-6 bg-white rounded-[3rem] shadow-2xl border border-slate-100 max-w-2xl overflow-hidden group">
                             <img src="images/imgi_16_gelatide1label.png" alt="[Gelatide Supplement Label]" class="w-full h-auto rounded-2xl transition-transform duration-700 group-hover:scale-105">
@@ -366,15 +371,11 @@
                         
                         <div class="grid md:grid-cols-2 gap-6">
                             <div class="flex items-center gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm text-left">
-                                <div class="bg-indigo-50 p-2 rounded-lg">
-                                    <i data-feather="shield" class="text-[#4A25B0] w-6 h-6"></i>
-                                </div>
+                                <div class="bg-indigo-50 p-2 rounded-lg"><i data-feather="shield" class="text-[#4A25B0] w-6 h-6"></i></div>
                                 <span class="font-bold text-slate-700 text-sm">100% natural ingredient blend</span>
                             </div>
                             <div class="flex items-center gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm text-left">
-                                <div class="bg-indigo-50 p-2 rounded-lg">
-                                    <i data-feather="award" class="text-[#4A25B0] w-6 h-6"></i>
-                                </div>
+                                <div class="bg-indigo-50 p-2 rounded-lg"><i data-feather="award" class="text-[#4A25B0] w-6 h-6"></i></div>
                                 <span class="font-bold text-slate-700 text-sm">GMP certified manufacturing</span>
                             </div>
                         </div>
@@ -383,7 +384,7 @@
             </div>
         </section>
 
-        <!-- SECTION 4: EXPECTATIONS (2 per line, no emoticons) -->
+        <!-- SECTION 4: EXPECTATIONS (2 Per Line, No Emoticons) -->
         <section class="py-24 bg-white">
             <div class="container-site text-center">
                 <div class="max-w-3xl mx-auto mb-16">
@@ -392,32 +393,32 @@
                     <p class="text-slate-500 mt-4 italic text-sm">(Individual results may vary.)</p>
                 </div>
 
-                <div class="grid grid-cols-2 gap-8">
-                    <div class="p-10 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-slate-800 text-xs uppercase tracking-widest">Stable Energy</h4>
+                <div class="grid grid-cols-2 gap-4 lg:gap-8 max-w-4xl mx-auto">
+                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
+                        <h4 class="font-black text-slate-800 text-sm uppercase tracking-widest">Stable Energy</h4>
                         <p class="text-slate-500 text-xs mt-3">Balance throughout your entire day.</p>
                     </div>
-                    <div class="p-10 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-slate-800 text-xs uppercase tracking-widest">No Crashes</h4>
+                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
+                        <h4 class="font-black text-slate-800 text-sm uppercase tracking-widest">No Crashes</h4>
                         <p class="text-slate-500 text-xs mt-3">Fewer sharp peaks and drops.</p>
                     </div>
-                    <div class="p-10 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-slate-800 text-xs uppercase tracking-widest">Daily Control</h4>
+                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
+                        <h4 class="font-black text-slate-800 text-sm uppercase tracking-widest">Daily Control</h4>
                         <p class="text-slate-500 text-xs mt-3">Greater sense of metabolic control.</p>
                     </div>
-                    <div class="p-10 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-slate-800 text-xs uppercase tracking-widest">Wellness</h4>
+                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
+                        <h4 class="font-black text-slate-800 text-sm uppercase tracking-widest">Wellness</h4>
                         <p class="text-slate-500 text-xs mt-3">Support to overall well-being.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION 5: FAQ -->
+        <!-- SECTION 5: STRATEGIC FAQ -->
         <section class="py-24 bg-slate-50">
             <div class="container-site max-w-3xl">
                 <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tighter">Frequently Asked Questions</h2>
+                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tighter text-center">Frequently Asked Questions</h2>
                 </div>
                 
                 <div class="faq-container">
@@ -432,7 +433,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFaq(this)">
                             What makes Gelatide different?
@@ -444,7 +444,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFaq(this)">
                             Is my purchase protected?
@@ -456,7 +455,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFaq(this)">
                             How long does one bottle last?
@@ -468,7 +466,6 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFaq(this)">
                             Is Gelatide safe?
@@ -484,7 +481,7 @@
             </div>
         </section>
 
-        <!-- FINAL CALL -->
+        <!-- SECTION 6: FINAL CALL -->
         <section class="py-24 bg-white">
             <div class="container-site">
                 <div class="bg-gradient-to-br from-[#4A25B0] to-[#311677] rounded-[3rem] p-12 lg:p-24 text-center text-white relative overflow-hidden">
@@ -555,38 +552,10 @@
         }
 
         const modalData = {
-            privacy: { 
-                title: "Privacy Policy", 
-                content: `
-                    <h4>Your privacy is critically important to us.</h4>
-                    <p>It is our policy to respect your privacy regarding any information we may collect while operating our website.</p>
-                    <h5>Security</h5>
-                    <p>The security of your Personal Information is important to us, but remember that no method of transmission over the Internet is 100% secure.</p>
-                `
-            },
-            terms: { 
-                title: "Terms of Use", 
-                content: `
-                    <h4>General</h4>
-                    <p>This website is operated by an Authorized Distributor. By using the Site, you agree to be bound by these Terms of Service.</p>
-                `
-            },
-            returns: { 
-                title: "Refund Policy", 
-                content: `
-                    <h4>60-Day Money Back Guarantee</h4>
-                    <p>If you are unsatisfied with your product for any reason, you have 60 days from the delivery date to request a refund.</p>
-                `
-            },
-            contact: { 
-                title: "Contact Us", 
-                content: `
-                    <h4>How To Contact Us</h4>
-                    <p>Our team is ready to help you with any questions.</p>
-                    <h5>Email Support:</h5>
-                    <p>contact@customercs.com</p>
-                `
-            }
+            privacy: { title: "Privacy Policy", content: "<h4>Privacy</h4><p>We process your data strictly for order fulfillment and support purposes.</p>" },
+            terms: { title: "Terms of Use", content: "<h4>Usage</h4><p>By using this site, you agree to our standard terms as an Authorized Distributor.</p>" },
+            returns: { title: "Refund Policy", content: "<h4>Refunds</h4><p>60-day money-back guarantee. Contact support for instructions.</p>" },
+            contact: { title: "Contact Us", content: "<h4>Support</h4><p>Email: contact@customercs.com<br>Phone: +1 (507) 448-8190</p>" }
         };
 
         function openModal(type) {
