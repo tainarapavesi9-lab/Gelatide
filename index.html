@@ -2,25 +2,58 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- =========================
-    SEO & AD COMPLIANCE 2026 - GELATIDE
-    ========================= -->
-    <title>Gelatide | Natural Daily Glucose Control – Official Website</title>
-    <meta name="description" content="Discover Gelatide, a natural approach using selected ingredients to support glucose metabolism and contribute to stable energy levels throughout the day.">
-    
-    <link rel="alternate" href="https://bloodsugarmethod.vercel.app/" hreflang="en-US" />
-    <link rel="alternate" href="https://bloodsugarmethod.vercel.app/" hreflang="x-default" />
+    <!-- ===== SEO CORE ===== -->
+    <title>Gelatide | Natural Metabolic Support & Energy Balance</title>
+    <meta name="description" content="Discover Gelatide, a natural approach to support metabolism, stable energy levels, and daily wellness. Try risk-free with a 60-day guarantee.">
+    <meta name="keywords" content="Gelatide, metabolic support, blood sugar balance, natural supplement, energy support, glucose metabolism, wellness formula, weight management support">
 
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <link rel="canonical" href="https://bloodsugarmethod.vercel.app/">
+    <link rel="canonical" href="https://burnfatprotocol.offersnowx.shop/">
 
-    <!-- Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- FAVICON (Product Image) -->
+    <link rel="icon" type="image/png" href="https://burnfatprotocol.offersnowx.shop/images/product.png">
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:title" content="Gelatide | Natural Metabolic Support">
+    <meta property="og:description" content="Support your metabolism and maintain stable energy levels with Gelatide. Natural formula with a 60-day guarantee.">
+    <meta property="og:image" content="https://burnfatprotocol.offersnowx.shop/images/product.png">
+    <meta property="og:url" content="https://burnfatprotocol.offersnowx.shop/">
+    <meta property="og:type" content="product">
+
+    <!-- ===== PERFORMANCE ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+
+    <link rel="preload" as="image" href="https://burnfatprotocol.offersnowx.shop/images/product.png">
+    <meta name="theme-color" content="#4A25B0">
+
+    <!-- ===== JSON-LD STRUCTURED DATA ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Gelatide",
+      "image": "https://burnfatprotocol.offersnowx.shop/images/product.png",
+      "description": "Gelatide is a natural formula designed to support metabolism, energy balance, and daily wellness.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Gelatide"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://burnfatprotocol.offersnowx.shop/",
+        "priceCurrency": "USD",
+        "price": "49",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
 
     <!-- TRACKING SCRIPT -->
     <script src="https://cdn.kavrocdn.com/code/8300-f9ad4ccb-04dd-4e78-8217-20014e0016b8"></script>
@@ -33,11 +66,12 @@
     <style>
         :root {
             --brand-primary: #4A25B0;
-            --brand-accent: #4A25B0;
+            --brand-secondary: #7C3AED;
+            --brand-accent: #10B981; /* Emerald for a fresh look */
             --brand-bg: #FFFFFF;
             --brand-text: #0F172A;
             --brand-muted: #64748B;
-            --footer-bg: #0F172A;
+            --footer-bg: #0A0712;
             --header-bg: #4A25B0;
         }
         
@@ -50,6 +84,7 @@
             margin: 0;
         }
 
+        /* Enhanced Ambient Background */
         .ambient-layer {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -57,9 +92,9 @@
             pointer-events: none;
             background-color: #fcfaff;
             background-image: 
-                radial-gradient(at 0% 0%, rgba(74, 37, 176, 0.08) 0, transparent 40%), 
-                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.04) 0, transparent 30%),
-                radial-gradient(at 100% 100%, rgba(74, 37, 176, 0.05) 0, transparent 40%);
+                radial-gradient(at 0% 0%, rgba(74, 37, 176, 0.1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.05) 0, transparent 40%),
+                radial-gradient(at 50% 100%, rgba(124, 58, 237, 0.08) 0, transparent 50%);
         }
 
         .container-site {
@@ -69,115 +104,132 @@
         }
 
         header { 
-            padding: 1.25rem 0; 
+            padding: 1rem 0; 
             position: sticky;
             top: 0;
             z-index: 100; 
-            background-color: var(--header-bg);
-            box-shadow: 0 4px 20px rgba(74, 37, 176, 0.15);
+            background: linear-gradient(90deg, #4A25B0 0%, #311677 100%);
+            box-shadow: 0 4px 20px rgba(74, 37, 176, 0.2);
         }
 
         .hero-section {
-            padding-top: 4rem;
-            padding-bottom: 5rem;
+            padding-top: 5rem;
+            padding-bottom: 6rem;
             position: relative;
-            z-index: 10;
         }
 
         .hero-title-block {
-            line-height: 1.1;
+            line-height: 1.05;
             letter-spacing: -0.04em;
         }
 
         .title-line {
             display: block;
-            font-size: clamp(2.2rem, 6vw, 4.2rem);
+            font-size: clamp(2.5rem, 6.5vw, 4.8rem);
             font-weight: 800;
             color: var(--brand-text);
             margin-bottom: 0.5rem;
         }
 
         .title-accent {
-            color: var(--brand-accent);
+            background: linear-gradient(135deg, #4A25B0 0%, #7C3AED 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .title-sub {
-            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
-            font-weight: 700;
-            margin-top: 1.5rem;
-            display: block;
-            color: var(--brand-accent);
+        /* TICKER SYSTEM */
+        .ticker-section {
+            padding: 2.5rem 0;
+            overflow: hidden;
+            background: #f8f6ff;
+            border-top: 1px solid rgba(74, 37, 176, 0.08);
+            border-bottom: 1px solid rgba(74, 37, 176, 0.08);
+        }
+
+        .ticker-wrapper {
+            display: flex;
+            width: fit-content;
+            animation: ticker 45s linear infinite;
+        }
+
+        @keyframes ticker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .review-ticker-card {
+            min-width: 320px;
+            background: white;
+            padding: 1.75rem;
+            margin: 0 1rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px -10px rgba(74, 37, 176, 0.1);
+            border: 1px solid rgba(74, 37, 176, 0.05);
         }
 
         /* BUTTONS */
         .btn-buy {
-            background: linear-gradient(135deg, #4A25B0 0%, #6D28D9 100%);
+            background: linear-gradient(135deg, #4A25B0 0%, #7C3AED 100%);
             color: white;
-            padding: 1.2rem 2rem;
-            border-radius: 12px;
+            padding: 1.25rem 2.5rem;
+            border-radius: 16px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-weight: 800;
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             width: 100%;
-            max-width: 420px;
+            max-width: 440px;
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 20px 40px rgba(74, 37, 176, 0.25);
+            box-shadow: 0 20px 40px rgba(74, 37, 176, 0.3);
             text-decoration: none;
         }
         .btn-buy:hover { 
-            transform: translateY(-4px) scale(1.02);
-            box-shadow: 0 25px 50px rgba(74, 37, 176, 0.35);
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(74, 37, 176, 0.4);
         }
         
         .cart-dot {
             background: rgba(255, 255, 255, 0.2);
-            width: 42px; height: 42px; border-radius: 10px;
+            width: 40px; height: 40px; border-radius: 12px;
             display: flex; align-items: center; justify-content: center;
         }
 
         .product-image {
             max-width: 100%;
             height: auto;
-            filter: drop-shadow(0 30px 60px rgba(74, 37, 176, 0.15));
+            filter: drop-shadow(0 40px 80px rgba(74, 37, 176, 0.25));
             animation: float 6s ease-in-out infinite;
         }
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-15px); }
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
         }
 
-        .section-tag {
-            color: var(--brand-primary);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            font-size: 0.7rem;
-            display: block;
-            margin-bottom: 1rem;
-        }
-
-        /* FAQ */
+        /* FAQ Styling */
         .faq-item {
             background: white;
-            border-radius: 16px;
-            margin-bottom: 1rem;
-            border: 1px solid rgba(15, 23, 42, 0.05);
+            border-radius: 18px;
+            margin-bottom: 1.25rem;
+            border: 1px solid rgba(74, 37, 176, 0.08);
             transition: all 0.3s ease;
         }
-        .faq-item.active { border-color: var(--brand-accent); box-shadow: 0 10px 30px rgba(74, 37, 176, 0.05); }
-        .faq-question { padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 700; color: var(--brand-text); }
-        .faq-answer { max-height: 0; overflow: hidden; transition: all 0.3s ease; }
-        .faq-item.active .faq-answer { max-height: 250px; padding: 0 1.5rem 1.5rem 1.5rem; }
+        .faq-item:hover {
+            border-color: var(--brand-primary);
+        }
+        .faq-item.active { 
+            border-color: var(--brand-primary); 
+            box-shadow: 0 15px 35px rgba(74, 37, 176, 0.08); 
+        }
+        .faq-question { padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: var(--brand-text); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: all 0.4s ease; }
+        .faq-item.active .faq-answer { max-height: 300px; padding: 0 1.5rem 1.5rem 1.5rem; }
 
         @media (max-width: 1024px) {
-            .hero-content-wrapper { display: flex; flex-direction: column; text-align: center; }
+            .hero-content-wrapper { text-align: center; }
             .hero-title-block { order: 2; margin-bottom: 2rem; }
-            .product-image-container { order: 3; margin: 2rem 0; display: flex; justify-content: center; }
-            .hero-description { order: 4; margin: 0 auto 2.5rem auto; }
-            .cta-container { order: 5; width: 100%; }
-            .trust-row { order: 6; justify-content: center; margin-top: 3rem; }
+            .product-image-container { order: 3; margin: 3rem 0; display: flex; justify-content: center; }
+            .hero-description { order: 4; margin: 0 auto 3rem auto; }
             .btn-buy { margin: 0 auto; }
         }
     </style>
@@ -188,270 +240,235 @@
 
     <header>
         <div class="container-site flex justify-between items-center">
-            <span class="font-black text-2xl tracking-tighter text-white uppercase">GELATIDE</span>
+            <span class="font-black text-2xl tracking-tighter text-white uppercase flex items-center gap-2">
+                <div class="w-8 h-8 bg-white rounded-lg p-1">
+                    <img src="https://burnfatprotocol.offersnowx.shop/images/product.png" alt="Logo" class="w-full h-full object-contain">
+                </div>
+                GELATIDE
+            </span>
             <div class="hidden md:flex gap-6 items-center">
-                <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="bg-white text-[#4A25B0] text-[10px] px-4 py-2 rounded-full font-bold uppercase tracking-wider transition-all hover:bg-slate-100 shadow-lg">Shop Now</a>
+                <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="bg-white text-[#4A25B0] text-[10px] px-6 py-2.5 rounded-xl font-black uppercase tracking-widest transition-all hover:scale-105 shadow-xl">Shop Now</a>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- HERO SECTION -->
         <section class="hero-section">
             <div class="container-site">
-                <div class="hero-content-wrapper lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center">
+                <div class="hero-content-wrapper lg:grid lg:grid-cols-12 lg:gap-20 lg:items-center">
                     
                     <div class="lg:col-span-7">
-                        <span class="title-sub uppercase mb-4">Consistent Metabolic Support</span>
+                        <div class="inline-block px-4 py-1.5 bg-indigo-50 border border-indigo-100 rounded-full mb-6">
+                            <span class="text-[10px] font-black uppercase tracking-widest text-[#4A25B0]">🔥 Metabolic Evolution 2026</span>
+                        </div>
                         <div class="hero-title-block lg:text-left">
-                            <h1 class="title-line">Natural Glucose Control in Your Daily Life</h1>
-                            <h2 class="text-xl lg:text-2xl font-bold text-slate-500 mt-4 leading-relaxed">Help your body maintain healthy blood sugar levels — without extreme measures</h2>
+                            <h1 class="title-line">Natural Metabolic <span class="title-accent">Support</span> & Energy</h1>
+                            <h2 class="text-xl lg:text-2xl font-bold text-slate-500 mt-4 leading-relaxed">Fuel your cellular efficiency without extreme dietary restrictions.</h2>
                         </div>
                         
                         <div class="product-image-container lg:hidden">
-                            <img src="images/imgi_1_2-frascos.png" alt="[Gelatide - Product Bottles]" class="product-image max-w-[280px]">
+                            <img src="https://burnfatprotocol.offersnowx.shop/images/product.png" alt="[Gelatide - Frasco]" class="product-image max-w-[300px]">
                         </div>
 
-                        <p class="hero-description text-base text-slate-500 max-w-xl leading-relaxed mt-8 mb-10 lg:text-left">
-                            Discover a natural ingredient-based approach that supports glucose metabolism, contributes to more stable energy levels, and assists in metabolic balance.
-                            <strong>Ideal for those seeking practical and consistent daily support.</strong>
+                        <p class="hero-description text-lg text-slate-500 max-w-xl leading-relaxed mt-10 mb-12 lg:text-left font-medium">
+                            Gelatide is a science-focused natural formula designed to assist glucose utilization and provide <span class="text-[#4A25B0] font-bold">clean, consistent energy</span> throughout your day.
                         </p>
 
                         <!-- CTA -->
-                        <div class="cta-container mb-8">
+                        <div class="cta-container mb-12">
                             <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="btn-buy">
-                                <span>Try Gelatide Now</span>
+                                <span>Get Gelatide Today</span>
                                 <div class="cart-dot">
-                                    <i data-feather="arrow-right" class="w-5 h-5 text-white"></i>
+                                    <i data-feather="shopping-cart" class="w-5 h-5 text-white"></i>
                                 </div>
                             </a>
+                            <div class="flex items-center gap-4 mt-6 opacity-60 justify-center lg:justify-start">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" alt="Stripe" class="h-4">
+                                <span class="text-[9px] font-bold uppercase tracking-widest">Secure 256-bit Encrypted Checkout</span>
+                            </div>
                         </div>
 
                         <!-- Hero Checklist -->
                         <div class="trust-row flex flex-wrap gap-x-8 gap-y-4">
                             <div class="flex items-center gap-2">
-                                <i data-feather="check-circle" class="w-4 h-4 text-[#4A25B0]"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">60-Day Guarantee</span>
+                                <i data-feather="shield" class="w-4 h-4 text-[#10B981]"></i>
+                                <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">60-Day Money Back</span>
                             </div>
                             <div class="flex items-center gap-2">
-                                <i data-feather="check-circle" class="w-4 h-4 text-[#4A25B0]"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">Certified Facility</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i data-feather="check-circle" class="w-4 h-4 text-[#4A25B0]"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">Premium Ingredients</span>
+                                <i data-feather="box" class="w-4 h-4 text-[#10B981]"></i>
+                                <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">Fast Shipping</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="hidden lg:flex lg:col-span-5 justify-end relative">
-                        <img src="images/imgi_1_2-frascos.png" alt="[Gelatide - Product]" class="product-image">
+                        <!-- Background glow -->
+                        <div class="absolute inset-0 bg-indigo-500/10 blur-[120px] rounded-full"></div>
+                        <img src="https://burnfatprotocol.offersnowx.shop/images/product.png" alt="[Gelatide - Foto do Produto]" class="product-image relative z-10">
                     </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- Proof Section -->
-        <section class="py-12 bg-slate-50 border-y border-slate-100">
+        <!-- REVIEW TICKER -->
+        <section class="ticker-section">
+            <div class="ticker-wrapper">
+                <div class="flex">
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“My energy levels are finally stable. No more crashing at 3 PM!”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Sarah J.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“I feel a sense of control over my daily routine that I haven't had in years.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Mark T.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“The quality of the formula is visible. Pure ingredients, pure results.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Elena R.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“Finally found something that aligns with my health goals without aggression.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— David S.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“Consistent use made a massive difference in my metabolic wellness.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Linda M.</span>
+                    </div>
+                </div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="flex">
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“My energy levels are finally stable. No more crashing at 3 PM!”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Sarah J.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“I feel a sense of control over my daily routine that I haven't had in years.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Mark T.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“The quality of the formula is visible. Pure ingredients, pure results.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Elena R.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“Finally found something that aligns with my health goals without aggression.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— David S.</span>
+                    </div>
+                    <div class="review-ticker-card">
+                        <div class="flex text-amber-400 mb-3">★★★★★</div>
+                        <p class="text-slate-600 font-bold italic text-sm">“Consistent use made a massive difference in my metabolic wellness.”</p>
+                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Linda M.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROOF BAR -->
+        <section class="py-16 bg-white border-y border-slate-100">
             <div class="container-site text-center">
-                <p class="text-slate-600 font-bold text-lg">
-                    💜 Over <span class="text-[#4A25B0] font-black">2,000 satisfied customers</span> already use Gelatide as part of their daily routine.
+                <p class="text-slate-600 font-extrabold text-xl lg:text-2xl tracking-tight">
+                    💜 Over <span class="text-[#4A25B0] font-black">2,400+ satisfied customers</span> trust Gelatide for their daily balance.
                 </p>
             </div>
         </section>
 
-        <!-- Mechanism Section -->
-        <section class="py-24 bg-white">
-            <div class="container-site">
-                <div class="max-w-3xl mx-auto text-center mb-16">
-                    <span class="section-tag">How It Works</span>
-                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tighter">How Gelatide Supports Your Metabolism</h2>
-                    <p class="text-slate-500 mt-6 text-lg">Unlike generic approaches, Gelatide was developed to act on three fundamental pillars of metabolic balance:</p>
+        <!-- STRATEGIC FAQ -->
+        <section class="py-24 bg-slate-50 relative overflow-hidden">
+            <!-- Decorative circle -->
+            <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-indigo-500/5 rounded-full blur-3xl"></div>
+            
+            <div class="container-site max-w-3xl relative z-10">
+                <div class="text-center mb-16">
+                    <span class="text-[10px] font-black uppercase tracking-widest text-[#4A25B0] mb-4 block">Strategic Transparency</span>
+                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tighter">Frequently Asked Questions</h2>
                 </div>
-
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-[#4A25B0]/30 transition-all group">
-                        <div class="w-12 h-12 bg-[#4A25B0] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#4A25B0]/20">
-                            <i data-feather="zap" class="text-white w-6 h-6"></i>
-                        </div>
-                        <h3 class="font-black text-slate-900 mb-4 uppercase text-sm">Glucose Utilization</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Direct support for your body's efficient use of glucose in everyday life.</p>
-                    </div>
-                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-[#4A25B0]/30 transition-all">
-                        <div class="w-12 h-12 bg-[#4A25B0] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#4A25B0]/20">
-                            <i data-feather="battery-charging" class="text-white w-6 h-6"></i>
-                        </div>
-                        <h3 class="font-black text-slate-900 mb-4 uppercase text-sm">Consistent Energy</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Contribution to more consistent energy levels, avoiding sharp spikes and crashes.</p>
-                    </div>
-                    <div class="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-[#4A25B0]/30 transition-all">
-                        <div class="w-12 h-12 bg-[#4A25B0] rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-[#4A25B0]/20">
-                            <i data-feather="heart" class="text-white w-6 h-6"></i>
-                        </div>
-                        <h3 class="font-black text-slate-900 mb-4 uppercase text-sm">Healthy Balance</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Supports healthy metabolic function in a balanced way without aggressive solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Science + Purity -->
-        <section class="py-24 bg-slate-50">
-            <div class="container-site">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div class="flex justify-center">
-                        <div class="relative p-4 bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 overflow-hidden max-w-md">
-                            <img src="images/imgi_16_gelatide1label.png" alt="[Gelatide Label]" class="w-full h-auto rounded-3xl">
-                        </div>
-                    </div>
-                    <div>
-                        <span class="section-tag">Premium Quality</span>
-                        <h2 class="text-4xl font-black text-slate-900 mb-8 uppercase tracking-tighter">Clean Formula.<br>Controlled Process.</h2>
-                        <p class="text-slate-500 text-lg leading-relaxed mb-10 italic">"Gelatide combines selected compounds to act on the key factors linked to metabolism, helping your body function more efficiently."</p>
-                        
-                        <div class="space-y-6">
-                            <div class="flex items-center gap-4">
-                                <div class="bg-indigo-100 p-2 rounded-lg"><i data-feather="shield" class="text-[#4A25B0] w-5 h-5"></i></div>
-                                <span class="font-bold text-slate-700">Carefully selected ingredients</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="bg-indigo-100 p-2 rounded-lg"><i data-feather="check" class="text-[#4A25B0] w-5 h-5"></i></div>
-                                <span class="font-bold text-slate-700">No unnecessary additives</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="bg-indigo-100 p-2 rounded-lg"><i data-feather="award" class="text-[#4A25B0] w-5 h-5"></i></div>
-                                <span class="font-bold text-slate-700">Produced in GMP certified facilities</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Benefits -->
-        <section class="py-24 bg-white">
-            <div class="container-site">
-                <div class="max-w-3xl mx-auto text-center mb-16">
-                    <span class="section-tag">What to Expect</span>
-                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tighter">What You Can Expect</h2>
-                    <p class="text-slate-500 mt-4 italic text-sm">(Results may vary from person to person.)</p>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="p-6 text-center border-r border-slate-100 last:border-none">
-                        <i data-feather="sun" class="w-8 h-8 text-[#4A25B0] mx-auto mb-4"></i>
-                        <h4 class="font-bold text-slate-800 text-sm uppercase">Stable Energy</h4>
-                        <p class="text-slate-500 text-xs mt-2">More stability throughout the day.</p>
-                    </div>
-                    <div class="p-6 text-center border-r border-slate-100 last:border-none">
-                        <i data-feather="trending-down" class="w-8 h-8 text-[#4A25B0] mx-auto mb-4"></i>
-                        <h4 class="font-bold text-slate-800 text-sm uppercase">No More Crashes</h4>
-                        <p class="text-slate-500 text-xs mt-2">Fewer sharp peaks and drops.</p>
-                    </div>
-                    <div class="p-6 text-center border-r border-slate-100 last:border-none">
-                        <i data-feather="target" class="w-8 h-8 text-[#4A25B0] mx-auto mb-4"></i>
-                        <h4 class="font-bold text-slate-800 text-sm uppercase">Food Routine</h4>
-                        <p class="text-slate-500 text-xs mt-2">Greater sense of control.</p>
-                    </div>
-                    <div class="p-6 text-center border-r border-slate-100 last:border-none">
-                        <i data-feather="smile" class="w-8 h-8 text-[#4A25B0] mx-auto mb-4"></i>
-                        <h4 class="font-bold text-slate-800 text-sm uppercase">Overall Well-being</h4>
-                        <p class="text-slate-500 text-xs mt-2">Metabolic balance support.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Social Proof -->
-        <section class="py-24 bg-[#4A25B0] text-white overflow-hidden">
-            <div class="container-site">
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div class="bg-white/10 backdrop-blur-sm p-10 rounded-[2rem] border border-white/10">
-                        <div class="flex text-amber-300 mb-6 text-sm">★★★★★</div>
-                        <p class="font-bold text-lg leading-relaxed mb-8 italic">“I noticed more stability in my energy during the day.”</p>
-                        <span class="text-[10px] font-black uppercase tracking-widest opacity-60">— Verified Customer</span>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-10 rounded-[2rem] border border-white/10">
-                        <div class="flex text-amber-300 mb-6 text-sm">★★★★★</div>
-                        <p class="font-bold text-lg leading-relaxed mb-8 italic">“I started using it as part of my routine and felt a difference in general balance.”</p>
-                        <span class="text-[10px] font-black uppercase tracking-widest opacity-60">— Verified Customer</span>
-                    </div>
-                    <div class="bg-white/10 backdrop-blur-sm p-10 rounded-[2rem] border border-white/10">
-                        <div class="flex text-amber-300 mb-6 text-sm">★★★★★</div>
-                        <p class="font-bold text-lg leading-relaxed mb-8 italic">“The consistency was what surprised me the most.”</p>
-                        <span class="text-[10px] font-black uppercase tracking-widest opacity-60">— Verified Customer</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Final CTA -->
-        <section class="py-32 bg-white relative">
-            <div class="container-site text-center">
-                <div class="max-w-2xl mx-auto">
-                    <span class="section-tag">Secure Decision</span>
-                    <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-6 uppercase tracking-tighter">Test Risk-Free for 60 Days</h2>
-                    <p class="text-slate-500 text-lg mb-12">
-                        Try Gelatide with peace of mind. If you are not satisfied with your experience, you can request a refund within 60 days. <strong>No complications.</strong>
-                    </p>
-                    
-                    <div class="flex justify-center mb-8">
-                        <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="btn-buy">
-                            <span>Get Started Now</span>
-                            <div class="cart-dot">
-                                <i data-feather="chevron-right" class="w-5 h-5 text-white"></i>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="flex justify-center items-center gap-2 opacity-50">
-                        <i data-feather="lock" class="w-3 h-3"></i>
-                        <span class="text-[10px] font-bold uppercase tracking-widest">Secure & Protected Purchase</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="py-24 bg-slate-50">
-            <div class="container-site max-w-3xl">
-                <h2 class="text-2xl font-black text-slate-900 mb-12 uppercase text-center tracking-widest">Frequently Asked Questions</h2>
                 
                 <div class="faq-container">
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFaq(this)">
-                            How does Gelatide work?
+                            How should I integrate Gelatide into my routine?
                             <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
                         </div>
                         <div class="faq-answer">
                             <p class="text-slate-500 text-sm leading-relaxed pb-4">
-                                Gelatide offers glucose metabolism support through a combination of selected ingredients that help the body in the efficient daily use of sugar.
+                                For best results, it is recommended to follow the instructions on the label consistently. Most users find that taking it in the morning with a meal provides the most stable support for the day ahead.
                             </p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFaq(this)">
-                            How long to notice results?
+                            What makes Gelatide different from generic support?
                             <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
                         </div>
                         <div class="faq-answer">
                             <p class="text-slate-500 text-sm leading-relaxed pb-4">
-                                Results may vary from person to person. Consistent use is highly recommended for you to have the best possible experience with the formula.
+                                Unlike genric fillers, Gelatide uses a precision-focused blend of natural extracts. Our formula targets cellular metabolic efficiency directly, focusing on long-term balance rather than temporary "fixes."
                             </p>
                         </div>
                     </div>
 
                     <div class="faq-item">
                         <div class="faq-question" onclick="toggleFaq(this)">
-                            Is it safe?
+                            Is my purchase protected by a guarantee?
                             <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
                         </div>
                         <div class="faq-answer">
                             <p class="text-slate-500 text-sm leading-relaxed pb-4">
-                                Absolutely. Gelatide is produced in certified facilities and follows rigorous quality and purity standards to ensure the safety of all produced batches.
+                                Absolutely. We offer a 60-Day Money Back Guarantee. If you aren't satisfied with your results, simply contact our support team for a full refund. No questions asked.
                             </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            How long does one bottle of Gelatide last?
+                            <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-slate-500 text-sm leading-relaxed pb-4">
+                                Each bottle contains a full 30-day supply of the formula. For those looking for the best value and long-term results, we recommend the 3 or 6-bottle packages.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            Can I use Gelatide if I have other health concerns?
+                            <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p class="text-slate-500 text-sm leading-relaxed pb-4">
+                                While our formula is 100% natural and produced in a GMP-certified facility, we always recommend consulting with your primary healthcare provider before starting any new supplement routine.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FINAL CALL -->
+        <section class="py-24 bg-white">
+            <div class="container-site">
+                <div class="bg-gradient-to-br from-[#4A25B0] to-[#311677] rounded-[3rem] p-12 lg:p-24 text-center text-white relative overflow-hidden">
+                    <!-- Glass effect overlay -->
+                    <div class="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+                    
+                    <div class="relative z-10 max-w-2xl mx-auto">
+                        <h2 class="text-4xl lg:text-6xl font-black mb-8 uppercase tracking-tighter">Ready for Balance?</h2>
+                        <p class="text-lg text-white/80 mb-12">Start your 60-day risk-free metabolic trial today.</p>
+                        <div class="flex justify-center">
+                            <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="bg-white text-[#4A25B0] px-10 py-5 rounded-2xl font-black text-xl uppercase tracking-widest shadow-2xl hover:scale-105 transition-transform">Get Started Now</a>
                         </div>
                     </div>
                 </div>
@@ -459,43 +476,44 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="py-16 bg-slate-900">
+    <!-- FOOTER -->
+    <footer class="py-20 bg-[#0A0712] text-slate-400">
         <div class="container-site">
-            <div class="grid lg:grid-cols-12 gap-12 mb-16">
+            <div class="grid lg:grid-cols-12 gap-16 mb-16">
                 <div class="lg:col-span-4">
-                    <span class="text-white font-black text-xl uppercase block mb-6 tracking-tighter">GELATIDE</span>
-                    <p class="text-slate-500 text-xs leading-relaxed mb-8">
-                        Precision natural health solutions. Committed to delivering high-quality, science-based formulas.
+                    <span class="text-white font-black text-2xl uppercase block mb-6 tracking-tighter">GELATIDE</span>
+                    <p class="text-xs leading-relaxed mb-8">
+                        Precision-focused metabolic solutions for the modern individual. Quality, transparency, and results.
                     </p>
+                    <div class="flex gap-4">
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center"><i data-feather="instagram" class="w-5 h-5"></i></div>
+                        <div class="w-10 h-10 bg-white/5 rounded-lg flex items-center justify-center"><i data-feather="facebook" class="w-5 h-5"></i></div>
+                    </div>
                 </div>
-                
                 <div class="lg:col-span-8">
-                    <div class="bg-white/5 p-6 rounded-2xl border border-white/5 text-[10px] text-slate-500 leading-relaxed text-justify">
-                        <p class="mb-4"><strong>Medical Disclaimer:</strong> The information on this site has not been evaluated by health regulatory bodies. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Consult your physician before starting any new supplementation routine.</p>
-                        <p>© 2026 GELATIDE LABS. All rights reserved. All trademarks are the property of their respective owners.</p>
+                    <div class="bg-white/5 p-8 rounded-2xl border border-white/5 text-[10px] leading-relaxed text-justify">
+                        <p class="mb-4"><strong>Medical Disclaimer:</strong> The information provided on this website is not a substitute for professional medical advice. The FDA has not evaluated the statements regarding Gelatide. This product is not designed to cure or prevent diseases. Individual results are subject to biological variation.</p>
+                        <p>© 2026 GELATIDE. All rights reserved. Built for metabolic excellence.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                <nav class="flex flex-wrap justify-center gap-x-8 gap-y-2">
-                    <button onclick="openModal('privacy')" class="text-[9px] font-bold text-slate-500 uppercase hover:text-white transition-colors">Privacy Policy</button>
-                    <button onclick="openModal('terms')" class="text-[9px] font-bold text-slate-500 uppercase hover:text-white transition-colors">Terms & Conditions</button>
-                    <button onclick="openModal('returns')" class="text-[9px] font-bold text-slate-500 uppercase hover:text-white transition-colors">Refund Policy</button>
-                    <button onclick="openModal('contact')" class="text-[9px] font-bold text-slate-500 uppercase hover:text-white transition-colors">Contact</button>
-                </nav>
+            <div class="border-t border-white/5 pt-10 flex flex-wrap justify-center gap-x-12 gap-y-4">
+                <button onclick="openModal('privacy')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white">Privacy</button>
+                <button onclick="openModal('terms')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white">Terms</button>
+                <button onclick="openModal('returns')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white">Refunds</button>
+                <button onclick="openModal('contact')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white">Contact</button>
             </div>
         </div>
     </footer>
 
-    <!-- Modal Policies -->
+    <!-- MODAL -->
     <div id="policy-modal" class="fixed inset-0 z-[200] hidden" aria-modal="true">
         <div class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 flex items-center justify-center p-4">
             <div class="bg-white w-full max-w-xl rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[80vh]">
                 <div class="p-6 border-b border-slate-100 flex justify-between items-center">
-                    <h3 class="font-black text-slate-900 uppercase tracking-widest text-xs" id="modal-title">Info</h3>
+                    <h3 class="font-black text-slate-900 uppercase tracking-widest text-xs" id="modal-title">Information</h3>
                     <button onclick="closeModal()" class="p-2 bg-slate-50 rounded-full hover:bg-slate-100"><i data-feather="x" class="w-4 h-4"></i></button>
                 </div>
                 <div class="p-8 overflow-y-auto text-sm leading-relaxed text-slate-600" id="modal-content"></div>
@@ -515,10 +533,10 @@
         }
 
         const modalData = {
-            privacy: { title: "Privacy Policy", content: "<h4>Protection</h4><p>We use your data exclusively for order processing and support purposes.</p>" },
-            terms: { title: "Terms & Conditions", content: "<h4>Terms</h4><p>The use of this site implies acceptance of our terms of service.</p>" },
-            returns: { title: "Refund Policy", content: "<h4>60-Day Guarantee</h4><p>If you are not satisfied, contact us within 60 days to request a full refund.</p>" },
-            contact: { title: "Contact", content: "<h4>Support</h4><p>Contact email: support@gelatide-official.com</p>" }
+            privacy: { title: "Privacy Policy", content: "<h4>Privacy</h4><p>We process your data according to strict security standards. We never sell your info.</p>" },
+            terms: { title: "Terms of Use", content: "<h4>Usage</h4><p>By using Gelatide, you agree to our standard terms and conditions.</p>" },
+            returns: { title: "Refund Policy", content: "<h4>Refunds</h4><p>Our 60-day guarantee is solid. Contact support@gelatide.com for help.</p>" },
+            contact: { title: "Contact Us", content: "<h4>Support</h4><p>Email: support@gelatide.com. We respond within 24 hours.</p>" }
         };
 
         function openModal(type) {
