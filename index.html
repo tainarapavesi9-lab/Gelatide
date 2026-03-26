@@ -190,7 +190,7 @@
             background: white;
             border-radius: 18px;
             margin-bottom: 1.25rem;
-            border: 1px solid rgba(15, 23, 42, 0.05);
+            border: 1px solid rgba(74, 37, 176, 0.08);
             transition: all 0.3s ease;
         }
         .faq-item.active { border-color: var(--brand-primary); box-shadow: 0 15px 35px rgba(74, 37, 176, 0.08); }
@@ -213,12 +213,9 @@
 
     <header>
         <div class="container-site flex justify-between items-center">
-            <span class="font-black text-2xl tracking-tighter text-white uppercase flex items-center gap-2">
-                <div class="w-8 h-8 bg-white rounded-lg p-1">
-                    <img src="images/imgi_1_2-frascos.png" alt="Logo" class="w-full h-full object-contain">
-                </div>
-                GELATIDE
-            </span>
+            <!-- CABEÇALHO: Apenas o nome do produto -->
+            <span class="font-black text-2xl tracking-tighter text-white uppercase">GELATIDE</span>
+            
             <div class="hidden md:flex gap-6 items-center">
                 <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="bg-white text-[#4A25B0] text-[10px] px-6 py-2.5 rounded-xl font-black uppercase tracking-widest transition-all hover:scale-105 shadow-xl">Shop Now</a>
             </div>
@@ -520,7 +517,7 @@
     <div id="policy-modal" class="fixed inset-0 z-[200] hidden" aria-modal="true">
         <div class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 flex items-center justify-center p-4">
-            <div class="bg-white w-full max-w-2xl rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[80vh]">
+            <div class="bg-white w-full max-w-xl rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[80vh]">
                 <div class="p-6 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white z-10">
                     <h3 class="font-black text-slate-900 uppercase tracking-widest text-xs" id="modal-title">Information</h3>
                     <button onclick="closeModal()" class="p-2 bg-slate-50 rounded-full hover:bg-slate-100"><i data-feather="x" class="w-4 h-4"></i></button>
