@@ -1,527 +1,170 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="hu">
 <head>
     <meta charset="UTF-8" />
+    <!-- VIEWPORT & PERFORMANCE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#3B9EDB">
     
-    <!-- ===== SEO & GOOGLE ADS COMPLIANCE 2026 ===== -->
-    <title>Gelatide | Natural Metabolic Support & Energy Balance</title>
-    <meta name="description" content="Discover Gelatide, a natural approach designed to support daily metabolic function and energy levels. Produced in GMP-certified facilities. Try risk-free for 60 days.">
-    <meta name="keywords" content="Gelatide, metabolic support, energy balance, natural wellness formula, glucose support, authorized distributor">
-
-    <link rel="canonical" href="https://burnfatprotocol.offersnowx.shop/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Script de Lógica/Rastreamento Autorizado -->
+    <script src="https://api.raads-trc.com/code/8300-db1e58dd-4385-4935-9fa0-2d48dc14d064"></script>
 
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="images/imgi_1_2-frascos.png">
+    <link rel="icon" href="images/nanoslim.png" type="image/png">
 
-    <!-- OPEN GRAPH -->
-    <meta property="og:title" content="Gelatide | Natural Metabolic Support">
-    <meta property="og:description" content="Support your metabolism naturally with Gelatide. Quality ingredients for daily energy balance.">
-    <meta property="og:image" content="images/imgi_1_2-frascos.png">
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://burnfatprotocol.offersnowx.shop/">
+    <!-- BASIC SEO -->
+    <title id="meta-title">Nano Slim Oficial | Bem-estar Natural na Roménia, Hungria e Portugal</title>
+    <meta name="description" id="meta-desc" content="Nano Slim apoia o metabolismo e o bem-estar natural. Fórmula avançada com ingredientes naturais. Entrega rápida em Portugal, Roménia e Hungria.">
+    <meta name="keywords" id="meta-keywords" content="Nano Slim, bem-estar, metabolismo, suplemento natural, Portugal, Roménia, Hungria">
+    <meta name="robots" content="index,follow" />
 
-    <!-- PERFORMANCE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/imgi_1_2-frascos.png">
-    <link rel="preload" as="image" href="images/imgi_16_gelatide1label.png">
+    <!-- CANONICAL -->
+    <link rel="canonical" href="https://www.trynanoslim.site/">
 
-    <!-- JSON-LD STRUCTURED DATA (SEO BOOST) -->
+    <!-- HREFLANG MULTI-IDIOMA -->
+    <link rel="alternate" hreflang="ro" href="https://www.trynanoslim.site/?lang=ro">
+    <link rel="alternate" hreflang="hu" href="https://www.trynanoslim.site/?lang=hu">
+    <link rel="alternate" hreflang="pt" href="https://www.trynanoslim.site/?lang=pt">
+    <link rel="alternate" hreflang="x-default" href="https://www.trynanoslim.site/">
+
+    <!-- JSON-LD: PRODUCT -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
+      "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "Gelatide",
-      "image": "https://burnfatprotocol.offersnowx.shop/images/imgi_1_2-frascos.png",
-      "description": "Natural supplement designed to support metabolism and stable energy levels.",
-      "brand": {
-        "@type": "Brand",
-        "name": "Gelatide"
-      },
+      "name": "Nano Slim",
+      "image": "https://www.trynanoslim.site/assets/product.png",
+      "description": "Suplemento natural para apoio ao metabolismo e bem-estar geral.",
+      "brand": { "@type": "Brand", "name": "Nano Slim" },
       "offers": {
         "@type": "Offer",
-        "url": "https://burnfatprotocol.offersnowx.shop/",
-        "priceCurrency": "USD",
-        "price": "49",
-        "availability": "https://schema.org/InStock"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "2400"
+        "url": "https://www.trynanoslim.site/",
+        "priceCurrency": "EUR",
+        "price": "49.00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition"
       }
     }
     </script>
 
-    <!-- TRACKING SCRIPT -->
-    <script src="https://cdn.kavrocdn.com/code/8300-f9ad4ccb-04dd-4e78-8217-20014e0016b8"></script>
-
-    <!-- UI ASSETS -->
+    <!-- UI Assets -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
-        :root {
-            --brand-primary: #4A25B0;
-            --brand-secondary: #7C3AED;
-            --brand-accent: #10B981; 
-            --brand-bg: #FFFFFF;
-            --brand-text: #0F172A;
-            --brand-muted: #64748B;
-            --footer-bg: #0A0712;
-            --header-bg: #4A25B0;
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; }
+        .star-filled { color: #f59e0b; fill: #f59e0b; }
+        .hero-section-bg { position: relative; background-color: #f8fbff; overflow: hidden; min-height: 85vh; display: flex; align-items: center; }
+        .hero-overlay-img {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover; background-position: center; opacity: 0.1; z-index: 0;
         }
-        
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            -webkit-font-smoothing: antialiased;
-            background-color: var(--brand-bg);
-            color: var(--brand-text);
-            overflow-x: hidden;
-            margin: 0;
+        .hero-container { position: relative; z-index: 10; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.9);
         }
-
-        .ambient-layer {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            pointer-events: none;
-            background-color: #fcfaff;
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(74, 37, 176, 0.08) 0, transparent 50%), 
-                radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.04) 0, transparent 30%),
-                radial-gradient(at 50% 100%, rgba(124, 58, 237, 0.08) 0, transparent 50%);
-        }
-
-        .container-site {
-            max-width: 1140px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-
-        header { 
-            padding: 1.25rem 0; 
-            position: sticky;
-            top: 0;
-            z-index: 100; 
-            background: linear-gradient(90deg, #4A25B0 0%, #311677 100%);
-            box-shadow: 0 4px 20px rgba(74, 37, 176, 0.2);
-        }
-
-        .hero-section {
-            padding-top: 5rem;
-            padding-bottom: 6rem;
-            position: relative;
-        }
-
-        .hero-title-block {
-            line-height: 1.05;
-            letter-spacing: -0.04em;
-        }
-
-        .title-line {
-            display: block;
-            font-size: clamp(2.5rem, 6.5vw, 4.8rem);
-            font-weight: 800;
-            color: var(--brand-text);
-            margin-bottom: 0.5rem;
-        }
-
-        .title-accent {
-            background: linear-gradient(135deg, #4A25B0 0%, #7C3AED 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .ticker-section {
-            padding: 2.5rem 0;
-            overflow: hidden;
-            background: #f8f6ff;
-            border-top: 1px solid rgba(74, 37, 176, 0.08);
-            border-bottom: 1px solid rgba(74, 37, 176, 0.08);
-        }
-
-        .ticker-wrapper {
-            display: flex;
-            width: fit-content;
-            animation: ticker 45s linear infinite;
-        }
-
-        .ticker-wrapper:hover { animation-play-state: paused; }
-
-        @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .review-ticker-card {
-            min-width: 320px;
-            background: white;
-            padding: 1.75rem;
-            margin: 0 1rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 25px -10px rgba(74, 37, 176, 0.1);
-            border: 1px solid rgba(74, 37, 176, 0.05);
-        }
-
-        .btn-buy {
-            background: linear-gradient(135deg, #4A25B0 0%, #7C3AED 100%);
-            color: white;
-            padding: 1.25rem 2.5rem;
-            border-radius: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-weight: 800;
-            font-size: 1.2rem;
-            width: 100%;
-            max-width: 440px;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 20px 40px rgba(74, 37, 176, 0.3);
-            text-decoration: none;
-            border: none;
-            cursor: pointer;
-        }
-        .btn-buy:hover { 
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 30px 60px rgba(74, 37, 176, 0.4);
-        }
-        
-        .cart-dot {
-            background: rgba(255, 255, 255, 0.2);
-            width: 40px; height: 40px; border-radius: 12px;
-            display: flex; align-items: center; justify-content: center;
-        }
-
-        .product-image {
-            max-width: 100%;
-            height: auto;
-            filter: drop-shadow(0 40px 80px rgba(74, 37, 176, 0.25));
-            animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(1deg); }
-        }
-
-        .section-tag {
-            color: var(--brand-primary);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.2em;
-            font-size: 0.7rem;
-            display: block;
-            margin-bottom: 1rem;
-        }
-
-        .faq-item {
-            background: white;
-            border-radius: 18px;
-            margin-bottom: 1.25rem;
-            border: 1px solid rgba(74, 37, 176, 0.08);
-            transition: all 0.3s ease;
-        }
-        .faq-item.active { border-color: var(--brand-primary); box-shadow: 0 15px 35px rgba(74, 37, 176, 0.08); }
-        .faq-question { padding: 1.5rem; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-weight: 800; color: var(--brand-text); }
-        .faq-answer { max-height: 0; overflow: hidden; transition: all 0.4s ease; }
-        .faq-item.active .faq-answer { max-height: 300px; padding: 0 1.5rem 1.5rem 1.5rem; }
-
-        @media (max-width: 1024px) {
-            .hero-content-wrapper { text-align: center; }
-            .hero-title-block { order: 2; margin-bottom: 2rem; }
-            .product-image-container { order: 3; margin: 3rem 0; display: flex; justify-content: center; }
-            .hero-description { order: 4; margin: 0 auto 3rem auto; }
-            .btn-buy { margin: 0 auto; }
-        }
+        .brand-bg { background-color: #3B9EDB; }
+        .brand-text { color: #3B9EDB; }
+        .prose h4 { font-weight: 700; margin-top: 1rem; margin-bottom: 0.5rem; color: #111; font-size: 0.9rem; }
+        .prose p { margin-bottom: 0.75rem; font-size: 0.85rem; line-height: 1.6; }
     </style>
 </head>
-<body>
+<body class="text-gray-800 relative">
 
-    <div class="ambient-layer"></div>
-
-    <header>
-        <div class="container-site flex justify-between items-center">
-            <span class="font-black text-2xl tracking-tighter text-white uppercase">GELATIDE</span>
-            <div class="hidden md:flex gap-6 items-center">
-                <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="bg-white text-[#4A25B0] text-[10px] px-6 py-2.5 rounded-xl font-black uppercase tracking-widest transition-all hover:scale-105 shadow-xl" aria-label="Shop Gelatide Now">Shop Now</a>
-            </div>
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md z-40 shadow-sm border-b border-gray-100">
+        <div class="container mx-auto flex justify-center items-center p-4">
+            <span class="text-2xl font-extrabold tracking-tighter brand-text">Nano Slim</span>
         </div>
     </header>
 
     <main>
-        <!-- SECTION 1: HERO -->
-        <section class="hero-section" aria-label="Introduction">
-            <div class="container-site">
-                <div class="hero-content-wrapper lg:grid lg:grid-cols-12 lg:gap-20 lg:items-center">
+        <section id="order" class="hero-section-bg">
+            <div class="hero-overlay-img"></div>
+            
+            <div class="container mx-auto px-6 py-10 md:py-16 hero-container">
+                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12 items-center">
                     
-                    <div class="lg:col-span-7">
-                        <div class="inline-block px-4 py-1.5 bg-indigo-50 border border-indigo-100 rounded-full mb-6">
-                            <span class="text-[10px] font-black uppercase tracking-widest text-[#4A25B0]">🔥 Natural Metabolic Evolution</span>
-                        </div>
-                        <div class="hero-title-block lg:text-left">
-                            <h1 class="title-line">Natural Metabolic <span class="title-accent">Support</span> & Energy</h1>
-                            <h2 class="text-xl lg:text-2xl font-bold text-slate-500 mt-4 leading-relaxed">Help your body maintain healthy sugar levels — without extreme measures.</h2>
-                        </div>
-                        
-                        <div class="product-image-container lg:hidden">
-                            <img src="images/imgi_1_2-frascos.png" alt="Gelatide Bottles - Front view" class="product-image max-w-[300px]">
+                    <div class="text-center md:text-left reveal flex flex-col items-center md:items-start">
+                        <!-- Badge -->
+                        <div class="glass-panel rounded-full px-5 py-2 mb-6 inline-flex items-center gap-3 shadow-sm mx-auto md:mx-0 border border-blue-100">
+                            <span class="font-bold text-sm">4.9/5</span>
+                            <div class="flex items-center">
+                                <i class="star-filled w-3 h-3" data-feather="star"></i>
+                                <i class="star-filled w-3 h-3" data-feather="star"></i>
+                                <i class="star-filled w-3 h-3" data-feather="star"></i>
+                                <i class="star-filled w-3 h-3" data-feather="star"></i>
+                                <i class="star-filled w-3 h-3" data-feather="star"></i>
+                            </div>
+                            <div class="w-px h-4 bg-gray-300"></div>
+                            <span class="text-xs font-bold uppercase tracking-wide text-gray-600" data-i18n="offer">LIMITÁLT AJÁNLAT: 50% KEDVEZMÉNY</span>
                         </div>
 
-                        <p class="hero-description text-lg text-slate-500 max-w-xl leading-relaxed mt-10 mb-12 lg:text-left font-medium">
-                            Gelatide is a science-focused natural formula designed to assist glucose utilization and provide clean, consistent energy throughout your day.
+                        <!-- Headline -->
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-5 leading-tight tracking-tight text-gray-900" data-i18n="h1">
+                            Nano Slim: Könnyebb test, laposabb has, több energia
+                        </h1>
+                        
+                        <!-- Subtitle -->
+                        <p class="text-lg md:text-xl mb-4 text-gray-700 leading-relaxed max-w-lg" data-i18n="p-hero">
+                            Érezd magad könnyedebben minden nap. A Nano Slim támogatja az anyagcserédet és természetes energiát biztosít a nap folyamán.
                         </p>
 
-                        <div class="cta-container mb-6">
-                            <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="btn-buy" aria-label="Get Gelatide Today - Exclusive Offer">
-                                <span>Get Gelatide Today</span>
-                                <div class="cart-dot">
-                                    <i data-feather="shopping-cart" class="w-5 h-5 text-white"></i>
-                                </div>
+                        <!-- Health Disclaimer (Critical for Google Ads) -->
+                        <p class="text-[10px] text-gray-400 mb-8 italic max-w-md" data-i18n="small-disclaimer">*Az eredmények egyénenként változhatnak. Ez a termék nem alkalmas betegségek diagnosztizálására, kezelésére vagy megelőzésére.</p>
+                        
+                        <!-- Checklist -->
+                        <div class="w-full max-w-md glass-panel rounded-2xl p-6 mb-8 text-left shadow-sm border border-blue-50">
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-3 h-3"></i>
+                                    </div>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-1">✔ Fejlett anyagcsere-támogatás</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-3 h-3"></i>
+                                    </div>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-2">✔ Természetes összetevők az emésztésért</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="brand-bg rounded-full p-1 mr-3 mt-1 flex-shrink-0">
+                                        <i data-feather="check" class="text-white w-3 h-3"></i>
+                                    </div>
+                                    <span class="text-gray-800 font-medium text-sm sm:text-base" data-i18n="list-3">✔ 30 napos elégedettségi garancia</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col gap-4 reveal">
+                        <!-- Product Image -->
+                        <div class="flex justify-center mb-4">
+                            <img src="images/nanoslim.png" alt="Nano Slim" class="w-full max-w-sm h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <p class="text-center font-bold text-gray-800 uppercase tracking-widest text-xs mb-2" data-i18n="choose">Válaszd ki az országod:</p>
+                        
+                        <div class="flex flex-col gap-4 w-full">
+                            <a href="https://r3es5.doctorthetran.com/l" class="flex items-center justify-between px-8 brand-bg hover:brightness-110 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 group">
+                                <span data-i18n="pt">Portugal</span>
+                                <i data-feather="arrow-right" class="w-5 h-5 opacity-70 group-hover:translate-x-1 transition-transform"></i>
                             </a>
-                        </div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest lg:text-left text-center mb-12">*Individual results may vary.</p>
-
-                        <div class="trust-row flex flex-wrap gap-x-8 gap-y-4">
-                            <div class="flex items-center gap-2">
-                                <i data-feather="shield" class="w-4 h-4 text-[#10B981]"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">60-Day Guarantee</span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <i data-feather="check-circle" class="w-4 h-4 text-[#10B981]"></i>
-                                <span class="text-[10px] font-black uppercase tracking-widest text-slate-700">Premium Formula</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="hidden lg:flex lg:col-span-5 justify-end relative">
-                        <div class="absolute inset-0 bg-indigo-500/10 blur-[120px] rounded-full"></div>
-                        <img src="images/imgi_1_2-frascos.png" alt="Gelatide Bottles - 2 Bottle Pack" class="product-image relative z-10">
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 2: TICKER REVIEWS -->
-        <section class="ticker-section" aria-label="Customer Reviews">
-            <div class="ticker-wrapper">
-                <div class="flex">
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“My energy levels are finally stable. No more crashing at 3 PM!”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Sarah J.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“I feel a sense of control over my daily routine that I haven't had in years.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Mark T.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“The quality of the formula is visible. Pure ingredients, pure results.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Elena R.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Finally found something that aligns with my health goals without aggression.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— David S.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Consistent use made a massive difference in my metabolic wellness.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Linda M.</span>
-                    </div>
-                </div>
-                <!-- Duplicate -->
-                <div class="flex">
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“My energy levels are finally stable. No more crashing at 3 PM!”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Sarah J.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“I feel a sense of control over my daily routine that I haven't had in years.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Mark T.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“The quality of the formula is visible. Pure ingredients, pure results.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Elena R.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Finally found something that aligns with my health goals without aggression.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— David S.</span>
-                    </div>
-                    <div class="review-ticker-card">
-                        <div class="flex text-amber-400 mb-3 text-xs">★★★★★</div>
-                        <p class="text-slate-600 font-bold italic text-sm leading-relaxed">“Consistent use made a massive difference in my metabolic wellness.”</p>
-                        <span class="mt-4 block text-[9px] font-black uppercase tracking-tighter text-[#4A25B0]">— Linda M.</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SOCIAL PROOF BAR -->
-        <section class="py-16 bg-white border-y border-slate-100">
-            <div class="container-site text-center">
-                <p class="text-slate-600 font-extrabold text-xl lg:text-2xl tracking-tight">
-                    Over <span class="text-[#4A25B0] font-black">2,400+ satisfied customers</span> trust Gelatide for their daily balance.
-                </p>
-            </div>
-        </section>
-
-        <!-- SECTION 3: PURITY FIRST -->
-        <section class="py-24 bg-slate-50" id="transparency">
-            <div class="container-site text-center">
-                <div class="max-w-4xl mx-auto">
-                    <span class="section-tag">Purity First</span>
-                    <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-8 uppercase tracking-tighter leading-tight">
-                        Clean Formula.<br>Controlled Process.
-                    </h2>
-                    
-                    <div class="flex justify-center mb-12">
-                        <div class="relative p-6 bg-white rounded-[3rem] shadow-2xl border border-slate-100 max-w-2xl overflow-hidden group">
-                            <img src="images/imgi_16_gelatide1label.png" alt="Gelatide Supplement Facts and Ingredients Label" class="w-full h-auto rounded-2xl transition-transform duration-700 group-hover:scale-105" loading="lazy">
-                        </div>
-                    </div>
-
-                    <div class="max-w-2xl mx-auto">
-                        <p class="text-slate-500 text-lg leading-relaxed mb-10 italic">
-                            "Gelatide combines selected compounds to help your body function more efficiently without unnecessary additives."
-                        </p>
-                        
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="flex items-center gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm text-left">
-                                <div class="bg-indigo-50 p-2 rounded-lg">
-                                    <i data-feather="shield" class="text-[#4A25B0] w-6 h-6"></i>
-                                </div>
-                                <span class="font-bold text-slate-700 text-sm">100% natural ingredient blend</span>
-                            </div>
-                            <div class="flex items-center gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm text-left">
-                                <div class="bg-indigo-50 p-2 rounded-lg">
-                                    <i data-feather="award" class="text-[#4A25B0] w-6 h-6"></i>
-                                </div>
-                                <span class="font-bold text-slate-700 text-sm">GMP certified manufacturing</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 4: EXPECTATIONS -->
-        <section class="py-24 bg-white" aria-labelledby="expectations-title">
-            <div class="container-site text-center">
-                <div class="max-w-3xl mx-auto mb-16">
-                    <span class="section-tag">Expectations</span>
-                    <h2 id="expectations-title" class="text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tighter">What You Can Expect</h2>
-                    <p class="text-slate-500 mt-4 italic text-sm">(Individual results may vary.)</p>
-                </div>
-
-                <div class="grid grid-cols-2 gap-4 lg:gap-8 max-w-4xl mx-auto text-slate-700">
-                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-sm uppercase tracking-widest">Stable Energy</h4>
-                        <p class="text-slate-500 text-xs mt-3">Balance throughout your entire day.</p>
-                    </div>
-                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-sm uppercase tracking-widest">No Crashes</h4>
-                        <p class="text-slate-500 text-xs mt-3">Fewer sharp peaks and drops.</p>
-                    </div>
-                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-sm uppercase tracking-widest">Daily Control</h4>
-                        <p class="text-slate-500 text-xs mt-3">Greater sense of metabolic control.</p>
-                    </div>
-                    <div class="p-8 lg:p-12 text-center bg-slate-50 rounded-[2.5rem] border border-slate-100">
-                        <h4 class="font-black text-sm uppercase tracking-widest">Wellness</h4>
-                        <p class="text-slate-500 text-xs mt-3">Support to overall well-being.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 5: FAQ -->
-        <section class="py-24 bg-slate-50">
-            <div class="container-site max-w-3xl">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl lg:text-4xl font-black text-slate-900 uppercase tracking-tighter text-center">Frequently Asked Questions</h2>
-                </div>
-                
-                <div class="faq-container">
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            How should I integrate Gelatide into my routine?
-                            <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="text-slate-500 text-sm leading-relaxed pb-4 px-6">
-                                For best results, follow the instructions on the label. Consistent daily use is recommended to support your metabolic journey.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            What makes Gelatide different?
-                            <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="text-slate-500 text-sm leading-relaxed pb-4 px-6">
-                                Gelatide uses a precision-focused blend of natural extracts targeting cellular metabolic efficiency directly.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            Is my purchase protected?
-                            <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="text-slate-500 text-sm leading-relaxed pb-4 px-6">
-                                Yes. We offer a 60-Day Money Back Guarantee. If you are not satisfied, contact our support team for a full refund.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            How long does one bottle last?
-                            <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="text-slate-500 text-sm leading-relaxed pb-4 px-6">
-                                Each bottle contains a 30-day supply. We recommend our multi-bottle packages for long-term consistency.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="faq-item">
-                        <div class="faq-question" onclick="toggleFaq(this)">
-                            Is Gelatide safe?
-                            <i data-feather="plus" class="w-5 h-5 text-[#4A25B0]"></i>
-                        </div>
-                        <div class="faq-answer">
-                            <p class="text-slate-500 text-sm leading-relaxed pb-4 px-6">
-                                Absolutely. Produced in a GMP-certified facility with rigorous quality standards for safety and purity.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION 6: FINAL CALL -->
-        <section class="py-24 bg-white">
-            <div class="container-site">
-                <div class="bg-gradient-to-br from-[#4A25B0] to-[#311677] rounded-[3rem] p-12 lg:p-24 text-center text-white relative overflow-hidden">
-                    <div class="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
-                    <div class="relative z-10 max-w-2xl mx-auto">
-                        <h2 class="text-4xl lg:text-6xl font-black mb-8 uppercase tracking-tighter">Ready for Balance?</h2>
-                        <p class="text-lg text-white/80 mb-12">Start your 60-day risk-free trial today.</p>
-                        <div class="flex justify-center">
-                            <a href="https://530f8lgftn7q2n12pbqjs9iy4u.hop.clickbank.net" class="bg-white text-[#4A25B0] px-10 py-5 rounded-2xl font-black text-xl uppercase tracking-widest shadow-2xl hover:scale-105 transition-transform" aria-label="Start your Gelatide journey now">Get Started Now</a>
+                            <a href="https://dgjee.doctormedved.com/l" class="flex items-center justify-between px-8 brand-bg hover:brightness-110 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 group">
+                                <span data-i18n="ro">Románia</span>
+                                <i data-feather="arrow-right" class="w-5 h-5 opacity-70 group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                            <a href="https://jayrf.doctorbuyer.com/l" class="flex items-center justify-between px-8 brand-bg hover:brightness-110 text-white text-xl font-bold py-5 rounded-2xl transition-all shadow-xl hover:-translate-y-1 group">
+                                <span data-i18n="hu">Magyarország</span>
+                                <i data-feather="arrow-right" class="w-5 h-5 opacity-70 group-hover:translate-x-1 transition-transform"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -529,51 +172,55 @@
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer class="py-20 bg-[#0A0712] text-slate-400 border-t border-white/5">
-        <div class="container-site">
-            <div class="grid lg:grid-cols-12 gap-16 mb-16">
-                <div class="lg:col-span-4">
-                    <span class="text-white font-black text-2xl uppercase block mb-6 tracking-tighter">GELATIDE</span>
-                    <p class="text-xs leading-relaxed mb-4">
-                        Precision-focused metabolic solutions. Quality, transparency, and results.
-                    </p>
-                    <div class="space-y-2 mb-6">
-                        <p class="text-[10px] font-bold uppercase tracking-widest text-indigo-400">Authorized Distributor</p>
-                        <p class="text-[10px] leading-relaxed">
-                            Support: contact@customercs.com<br>
-                            Phone: +1 (507) 448-8190<br>
-                            Return Address: 11870 62nd St N Largo, Fl. 33773
-                        </p>
-                    </div>
+    <footer class="bg-gray-950 text-gray-400 py-12 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center text-xs">
+            <p class="font-bold text-white text-lg mb-4">Nano Slim</p>
+            
+            <div class="mb-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-[11px] max-w-2xl mx-auto border-b border-gray-900 pb-8">
+                <div class="md:text-left">
+                    <p class="text-gray-300 uppercase font-bold mb-2" data-i18n="entity-label">Felelős entitás:</p>
+                    <p>Fonslife Trading FZCO | License 39314</p>
+                    <p>Dubai Silicon Oasis, DDP, Building A1, Dubai, UAE</p>
                 </div>
-                <div class="lg:col-span-8">
-                    <div class="bg-white/5 p-8 rounded-2xl border border-white/5 text-[10px] leading-relaxed text-justify">
-                        <p class="mb-4"><strong>FDA Disclaimer:</strong> The statements on this website have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Consult your physician before beginning any supplement routine. Individual results may vary.</p>
-                        <p>© 2026 GELATIDE. All rights reserved. Registered Trademarks are the property of their respective owners.</p>
-                    </div>
+                <div class="md:text-left">
+                    <p class="text-gray-300 uppercase font-bold mb-2" data-i18n="logistics-label">Logisztikai Központ:</p>
+                    <p>3979 Albany Post Road ste 2, Unit #2277, Hyde Park, NY 12538, USA</p>
+                </div>
+                <div class="md:col-span-2 text-center pt-2">
+                    <p data-i18n="support">Ügyfélszolgálat: support@nanoslim.com | +1 (888) 828-8952</p>
                 </div>
             </div>
+            
+            <div class="flex justify-center flex-wrap gap-6 mb-10 font-bold uppercase tracking-widest text-[10px]">
+                <button onclick="openModal('terms')" class="hover:text-white transition-colors" data-i18n="btn-terms">Értékesítési feltételek</button>
+                <button onclick="openModal('privacy')" class="hover:text-white transition-colors" data-i18n="btn-privacy">Adatvédelmi nyilatkozat</button>
+                <button onclick="openModal('shipping')" class="hover:text-white transition-colors" data-i18n="btn-shipping">Szállítási feltételek</button>
+                <button onclick="openModal('returns')" class="hover:text-white transition-colors" data-i18n="btn-returns">Visszaküldési politika</button>
+            </div>
 
-            <div class="border-t border-white/5 pt-10 flex flex-wrap justify-center gap-x-12 gap-y-4">
-                <button onclick="openModal('privacy')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white" aria-label="View Privacy Policy">Privacy Policy</button>
-                <button onclick="openModal('terms')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white" aria-label="View Terms of Use">Terms of Use</button>
-                <button onclick="openModal('returns')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white" aria-label="View Refund Policy">Refund Policy</button>
-                <button onclick="openModal('contact')" class="text-[10px] font-bold uppercase tracking-widest hover:text-white" aria-label="View Contact Information">Contact Us</button>
+            <div class="max-w-4xl mx-auto space-y-4 leading-relaxed opacity-60 text-[10px]" data-i18n="footer-disclaimer">
+                <p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A Nano Slim a Fonslife Trading FZCO prémium wellness márkája.</p>
+                <p>FONTOS: Az ezen a webhelyen található információk és a Nano Slim termék nem helyettesíti a szakszerű orvosi tanácsadást vagy kezelést. Az eredmények az egyéni anyagcserétől, az étrendtől és az edzéstervtől függően változhatnak. Konzultáljon kezelőorvosával, mielőtt bármilyen étrend-kiegészítőt elkezdené használni, különösen, ha Ön terhes, szoptat vagy orvosi kezelés alatt áll.</p>
+                <p>&copy; 2026 Nano Slim Wellness. Minden jog fenntartva.</p>
             </div>
         </div>
     </footer>
 
     <!-- MODAL -->
-    <div id="policy-modal" class="fixed inset-0 z-[200] hidden" aria-modal="true" role="dialog">
-        <div class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm" onclick="closeModal()"></div>
-        <div class="fixed inset-0 flex items-center justify-center p-4">
-            <div class="bg-white w-full max-w-xl rounded-3xl overflow-hidden shadow-2xl flex flex-col max-h-[80vh]">
-                <div class="p-6 border-b border-slate-100 flex justify-between items-center sticky top-0 bg-white z-10">
-                    <h3 class="font-black text-slate-900 uppercase tracking-widest text-xs" id="modal-title">Information</h3>
-                    <button onclick="closeModal()" class="p-2 bg-slate-50 rounded-full hover:bg-slate-100" aria-label="Close Modal"><i data-feather="x" class="w-4 h-4"></i></button>
+    <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 bg-gray-900/90 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-0 z-10 overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4">
+                <div class="relative bg-white rounded-2xl shadow-2xl max-w-3xl w-full max-h-[80vh] flex flex-col">
+                    <div class="p-6 border-b flex justify-between items-center">
+                        <h3 class="font-bold text-lg" id="modal-title">Legal</h3>
+                        <button onclick="closeModal()" class="p-2 hover:bg-gray-100 rounded-full"><i data-feather="x"></i></button>
+                    </div>
+                    <div class="p-8 overflow-y-auto prose prose-sm max-w-none" id="modal-content-area"></div>
+                    <div class="p-4 border-t bg-gray-50 flex justify-end">
+                        <button onclick="closeModal()" class="brand-bg text-white px-6 py-2 rounded-xl font-bold" data-i18n="btn-close">Close</button>
+                    </div>
                 </div>
-                <div class="p-8 overflow-y-auto text-sm leading-relaxed text-slate-600 prose prose-slate max-w-none" id="modal-content"></div>
             </div>
         </div>
     </div>
@@ -581,48 +228,109 @@
     <script>
         feather.replace();
 
-        function toggleFaq(element) {
-            const item = element.parentElement;
-            const isActive = item.classList.contains('active');
-            document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
-            if (!isActive) item.classList.add('active');
-            feather.replace();
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                if (reveals[i].getBoundingClientRect().top < window.innerHeight - 50) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+        reveal();
+
+        const translations = {
+            pt: {
+                title: "Nano Slim Oficial | Bem-estar Natural em Portugal",
+                desc: "Nano Slim ajuda a apoiar o metabolismo e a reduzir o inchaço. Fórmula natural disponível em Portugal.",
+                offer: "OFERTA LIMITADA: 50% DE DESCONTO",
+                h1: "Nano Slim: Corpo mais leve, barriga mais lisa, mais energia",
+                "p-hero": "Sinta-se mais leve todos os dias. O Nano Slim apoia o seu metabolismo e proporciona energia natural ao longo do dia.",
+                "small-disclaimer": "*Os resultados podem variar de pessoa para pessoa. Este produto não se destina a diagnosticar, tratar ou prevenir doenças.",
+                "list-1": "✔ Apoio avançado ao metabolismo",
+                "list-2": "✔ Ingredientes naturais para a digestão",
+                "list-3": "✔ Garantia de satisfação de 30 dias",
+                choose: "Escolha o seu país:",
+                pt: "Portugal", ro: "Roménia", hu: "Hungria",
+                "entity-label": "Entidade Responsável:",
+                "logistics-label": "Logística:",
+                support: "Suporte: support@nanoslim.com | +1 (888) 828-8952",
+                "btn-terms": "Termos de venda", "btn-privacy": "Privacidade", "btn-shipping": "Envio", "btn-returns": "Devolução", "btn-close": "Fechar",
+                "footer-disclaimer": "<p>Este site não faz parte do Google™ ou Meta Inc. O Nano Slim é uma marca premium da Fonslife Trading FZCO.</p><p>IMPORTANTE: Os resultados variam consoante o metabolismo individual. Consulte o seu médico antes de iniciar qualquer suplemento.</p><p>&copy; 2026 Nano Slim. Todos os direitos reservados.</p>"
+            },
+            ro: {
+                title: "Nano Slim Oficial | Bunăstare Naturală în România",
+                desc: "Nano Slim ajută la susținerea metabolismului și reducerea balonării. Disponibil în România.",
+                offer: "OFERTĂ LIMITATĂ: 50% REDUCERE",
+                h1: "Nano Slim: Corp mai ușor, stomac mai plat, mai multă energie",
+                "p-hero": "Simte-te mai ușor în fiecare zi. Nano Slim îți susține metabolismul și oferă energie naturală pe tot parcursul zilei.",
+                "small-disclaimer": "*Rezultatele pot varia. Acest produs nu este destinat diagnosticării, tratării sau prevenirii bolilor.",
+                "list-1": "✔ Suport avansat pentru metabolism",
+                "list-2": "✔ Ingrediente naturale pentru digestie",
+                "list-3": "✔ Garanție de satisfacție de 30 de zile",
+                choose: "Alege țara ta:",
+                pt: "Portugalia", ro: "România", hu: "Ungaria",
+                "entity-label": "Entitate Responsabilă:",
+                "logistics-label": "Logistică:",
+                support: "Suport: support@nanoslim.com | +1 (888) 828-8952",
+                "btn-terms": "Termeni și condiții", "btn-privacy": "Confidențialitate", "btn-shipping": "Livrare", "btn-returns": "Retur", "btn-close": "Închide",
+                "footer-disclaimer": "<p>Acest site nu face parte din Google™ sau Meta Inc. Nano Slim este o marcă premium a Fonslife Trading FZCO.</p><p>IMPORTANT: Rezultatele variază în funcție de metabolismul individual. Consultați medicul înainte de utilizare.</p><p>&copy; 2026 Nano Slim. Toate drepturile rezervate.</p>"
+            },
+            hu: {
+                title: "Nano Slim Oficial | Természetes jó közérzet Magyarországon",
+                desc: "A Nano Slim segít az anyagcsere támogatásában és csökkenti a puffadást. Elérhető Magyarországon.",
+                offer: "LIMITÁLT AJÁNLAT: 50% KEDVEZMÉNY",
+                h1: "Nano Slim: Könnyebb test, laposabb has, több energia",
+                "p-hero": "Érezd magad könnyedebben minden nap. A Nano Slim támogatja az anyagcserédet és természetes energiát biztosít a nap folyamán.",
+                "small-disclaimer": "*Az eredmények egyénenként változhatnak. Ez a termék nem alkalmas betegségek diagnosztizálására vagy kezelésére.",
+                "list-1": "✔ Fejlett anyagcsere-támogatás",
+                "list-2": "✔ Természetes összetevők az emésztésért",
+                "list-3": "✔ 30 napos elégedettségi garancia",
+                choose: "Válaszd ki az országod:",
+                pt: "Portugália", ro: "Románia", hu: "Magyarország",
+                "entity-label": "Felelős entitás:",
+                "logistics-label": "Logisztika:",
+                support: "Ügyfélszolgálat: support@nanoslim.com | +1 (888) 828-8952",
+                "btn-terms": "Értékesítési feltételek", "btn-privacy": "Adatvédelem", "btn-shipping": "Szállítás", "btn-returns": "Visszaküldés", "btn-close": "Bezárás",
+                "footer-disclaimer": "<p>Ez az oldal nem része a Google™-nek vagy a Meta Inc.-nek. A Nano Slim a Fonslife Trading FZCO prémium wellness márkája.</p><p>FONTOS: Az eredmények egyénenként változhatnak. Konzultáljon orvosával használat előtt.</p><p>&copy; 2026 Nano Slim. Minden jog fenntartva.</p>"
+            }
+        };
+
+        function applyTranslation() {
+            const browserLang = navigator.language.split('-')[0];
+            let targetLang = translations[browserLang] ? browserLang : 'hu';
+            const dict = translations[targetLang];
+            
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) el.innerHTML = dict[key];
+            });
+            document.title = dict.title;
+            document.querySelector('meta[name="description"]').content = dict.desc;
+            document.documentElement.lang = targetLang;
         }
 
+        window.addEventListener('DOMContentLoaded', applyTranslation);
+
         const modalData = {
-            privacy: { 
-                title: "Privacy Policy", 
-                content: "<h4>Privacy</h4><p>We process your data strictly for order fulfillment and support purposes. Your data is encrypted and handled according to modern safety standards.</p>" 
-            },
-            terms: { 
-                title: "Terms of Use", 
-                content: "<h4>Usage</h4><p>By using this site, you agree to our standard terms as an Authorized Distributor. This website is owned and operated by our authorized company representatives.</p>" 
-            },
-            returns: { 
-                title: "Refund Policy", 
-                content: "<h4>Refunds</h4><p>60-day money-back guarantee. If you are unsatisfied, return all bottles to: 11870 62nd St N Largo, Fl. 33773. Contact support for instructions.</p>" 
-            },
-            contact: { 
-                title: "Contact Us", 
-                content: "<h4>Support</h4><p>Email: contact@customercs.com<br>Phone: +1 (507) 448-8190<br>Available Monday to Friday, 9am - 5pm.</p>" 
-            }
+            terms: { title: "Terms of Sale", content: "<h4>Vendas e Condições</h4><p>Ao adquirir o Nano Slim, o utilizador concorda que o produto se destina a uso pessoal. A garantia de satisfação de 30 dias permite o reembolso caso o produto seja devolvido na embalagem original e sem danos. As transações são processadas em ambiente seguro.</p>" },
+            privacy: { title: "Privacy Policy", content: "<h4>Política de Privacidade</h4><p>Respeitamos a sua privacidade. Os dados recolhidos (nome, morada, email) são utilizados exclusivamente para o processamento da encomenda e apoio ao cliente. Não partilhamos dados com terceiros para fins de marketing sem consentimento explícito. Cumprimos o RGPD.</p>" },
+            shipping: { title: "Shipping Policy", content: "<h4>Política de Envio</h4><p>As encomendas são processadas em 24-48h. O tempo de entrega estimado para Portugal, Roménia e Hungria é de 2 a 5 dias úteis. Receberá um código de seguimento assim que a encomenda for expedida.</p>" },
+            returns: { title: "Return Policy", content: "<h4>Política de Devolução</h4><p>Aceitamos devoluções num prazo de 30 dias após a receção. O produto deve estar selado e na embalagem original. Para iniciar o processo, contacte suporte@nanoslim.com com os detalhes da encomenda.</p>" }
         };
 
         function openModal(type) {
             const data = modalData[type];
             document.getElementById('modal-title').innerText = data.title;
-            document.getElementById('modal-content').innerHTML = data.content;
+            document.getElementById('modal-content-area').innerHTML = data.content;
             document.getElementById('policy-modal').classList.remove('hidden');
             document.body.style.overflow = 'hidden';
-            feather.replace();
         }
-
         function closeModal() {
             document.getElementById('policy-modal').classList.add('hidden');
-            document.body.style.overflow = 'auto';
+            document.body.style.overflow = '';
         }
-
-        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
     </script>
 </body>
 </html>
